@@ -1,0 +1,231 @@
+.cuerpo {
+    padding-top: 120px;
+}
+
+@media (max-width:767px) {}
+
+@media only screen and (min-width:768px) and (max-width:1068px) {}
+
+@media (min-width:1069px) {
+    .galeriaFlores {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .tituloGaleriaFlores {
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .tituloGaleriaFlores h2 {
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+    .cajonGaleria {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .cajonGaleriaSup {
+        width: 100%;
+    }
+    .cajaPrincipalFlores {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .fotoPrincipal {
+        width: 45%;
+        background-color: #FFF;
+        border: 1px solid;
+        text-align: center;
+    }
+    .fotoPrincipal img {
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .nombreRosa {
+        width: 100%;
+        position: relative;
+        bottom: 7%;
+        height: 5%;
+        background-color: rgba(255, 255, 255, 0.4);
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .estiloRosa {
+        width: 100%;
+        position: relative;
+        bottom: 7%;
+        height: 3%;
+        background-color: rgba(200, 200, 200, 0.4);
+        font-size: 1.2em;
+        font-weight: bold;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .estiloRosa2 {
+        width: 100%;
+        position: relative;
+        bottom: 7%;
+        height: 3%;
+        font-size: 1em;
+        font-weight: bold;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFF;
+        flex-wrap: wrap;
+    }
+    .infoPrincipal {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+    }
+    .tablaPrincipal {
+        width: 100%;
+        border: 1px solid;
+        padding: 5%;
+    }
+    .table th {
+        font-size: 1.2em;
+    }
+    .table td {
+        font-size: 1.2em;
+    }
+    .cajonEmpaques {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: #000;
+        padding: 1%;
+    }
+    .cajaEmpaque {
+        width: 32%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1%;
+        background-color: #FFF;
+    }
+    .cajaEmpaque img {
+        width: 100%;
+        height: auto;
+        max-height: 75%;
+        min-height: 75%;
+    }
+    .estiloRosa1 {
+        width: 100%;
+        height: 10%;
+        background-color: rgba(0, 0, 150, 0.8);
+        font-size: 1em;
+        font-weight: bold;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFF;
+    }
+    .volumen {
+        width: 100%;
+        font-size: 0.75em;
+        text-align: center;
+        font-weight: bold;
+    }
+    .cajonGaleriaInf {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .botonFlores {
+        width: 19%;
+        border: none;
+        background-color: transparent;
+    }
+    .botonFlores:hover {
+        background-color: #52C8FF;
+    }
+    .cajaFloresInf1 {
+        width: 100%;
+        background-color: #000;
+        margin: 0.5%;
+        padding: 0.01%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cajaFloresInf {
+        width: 98%;
+        background-color: #FFF;
+        margin: 10px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cajaFloresInf {
+        width: 100%;
+        height: auto;
+    }
+    .cajonInteractivo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #cajonInteractivo1 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .cajaInteractivaImagen {
+        width: 20%;
+        text-align: center;
+    }
+    .cajaInteractivaImagen img {
+        width: 40%;
+        margin: auto;
+        height: auto;
+        min-width: 50px;
+    }
+    #cajonInteractivo2 {
+        height: 20px;
+    }
+    .triangulo {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 20px 20px 20px;
+        border-color: transparent transparent #2830db transparent;
+        position: relative;
+        left: 12.5%;
+    }
+    #cajonInteractivo3 {
+        background-color: #2830db;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        color: white;
+        font-weight: bold;
+    }
+}

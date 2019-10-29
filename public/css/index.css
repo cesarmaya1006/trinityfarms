@@ -1,0 +1,16 @@
+@media (max-width:768px) {
+    .textoPaginaPrincipal {
+        width: 95%;
+        margin: auto;
+    }
+}
+
+@media (min-width:769px) {
+    .cuerpo {
+        padding-top: 120px;
+    }
+    .textoPaginaPrincipal {
+        width: 70%;
+        margin: auto;
+    }
+}

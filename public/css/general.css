@@ -1,0 +1,365 @@
+body {
+    background-color: rgba(187, 173, 109, 0.5);
+}
+
+.navbar>a {
+    color: #2e3192;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #2e3192;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    background-color: grey;
+    color: white;
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+.tituloMenu {
+    color: #2e3192;
+}
+
+.footer {
+    width: 100%;
+    margin-top: 200px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cubierta1 {
+    width: 100%;
+    height: 10%;
+    min-height: 15px;
+    background-color: #37355C;
+}
+
+.cubierta2 {
+    width: 100%;
+    height: 115px;
+    min-height: 115px;
+    background-image: linear-gradient(white, #37355C);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cubierta3 {
+    width: 100%;
+    height: 10%;
+    min-height: 70px;
+    background-color: #37355C;
+}
+
+.logo-footer {
+    width: 50%;
+    text-align: right;
+}
+
+.logo-footer img {
+    width: auto;
+    height: 115px;
+}
+
+.infoFooter {
+    width: 50%;
+    padding-left: 10px;
+    padding-top: 10px;
+    line-height: 2px;
+    color: #000;
+    font-weight: bold;
+}
+
+@media (max-width:768px) {
+    .barraMenu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 1);
+    }
+    .logoPrincipal {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .imagenMenu {
+        width: 12%;
+    }
+    .imagenMenu>img {
+        width: 100%;
+        height: auto;
+    }
+    .tituloMenu {
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .tituloMenu>h1 {
+        width: 70%;
+        font-size: 1.8em;
+    }
+    .tituloMenu>img {
+        width: 25%;
+        height: auto;
+    }
+    .barraRedes {
+        position: fixed;
+        z-index: 200;
+        top: 150px;
+        width: 200px;
+    }
+    .redes {
+        display: flex;
+        flex-direction: row;
+    }
+    .redes>a {
+        margin-left: 10px;
+    }
+    .infoFooter {
+        font-size: 0.8em;
+    }
+    .acordeonPaginaPrincipal {
+        display: none;
+    }
+    .cuerpo {
+        padding-top: 80px;
+    }
+}
+
+@media (min-width:769px) {
+    .barraMenu {
+        position: fixed;
+        z-index: 1000;
+        top: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        background-color: rgba(255, 255, 255, 1);
+    }
+    .logoPrincipal {
+        width: 50%;
+        text-align: right;
+        margin-right: 0%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: row;
+    }
+    .imagenMenu {
+        width: 10%;
+    }
+    .imagenMenu img {
+        width: 100%;
+        height: 90px;
+    }
+    .tituloMenu img {
+        width: 30%;
+        max-height: 90px;
+        margin-left: 10%;
+    }
+    .tituloMenu {
+        width: 80%;
+        margin: auto;
+        text-align: left;
+        color: #2e3192;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .menuPrincipal {
+        height: 50%;
+        display: flex;
+        align-items: center;
+    }
+    .navbar>a {
+        font-size: 1.2em;
+    }
+    .nav-link {
+        font-size: 1.2em;
+    }
+    .barraRedes {
+        position: fixed;
+        z-index: 200;
+        top: 16%;
+        width: 50px;
+        font-size: 2em;
+        right: 5%;
+    }
+    .redes {
+        display: flex;
+        flex-direction: column;
+        color: #80FD58;
+        text-shadow: 1px 1px #000000;
+    }
+    .acordeonPaginaPrincipal {
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+    /* slider Servicios */
+    .tituloSliderServicios {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        text-align: center;
+        font-size: 28px;
+    }
+    .accordion {
+        width: 100%;
+        height: 350px;
+        overflow: hidden;
+        margin: 0px auto;
+    }
+    .accordion ul {
+        width: 100%;
+        display: table;
+        table-layout: fixed;
+        margin: 0;
+        padding: 0;
+    }
+    .accordion ul li {
+        display: table-cell;
+        vertical-align: bottom;
+        position: relative;
+        width: 16.666%;
+        height: 350px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        transition: all 500ms ease-in-out;
+    }
+    .accordion ul li div {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+    }
+    .accordion ul li div a {
+        display: block;
+        height: 350px;
+        width: 100%;
+        position: relative;
+        z-index: 3;
+        vertical-align: bottom;
+        padding: 15px 20px;
+        box-sizing: border-box;
+        color: #fff;
+        text-shadow: 1px 1px 2px #000;
+        /*filter: invert(100%);*/
+        text-decoration: none;
+        font-family: Open Sans, sans-serif;
+        transition: all 300ms ease-in-out;
+    }
+    .accordion ul li div a * {
+        opacity: 0;
+        margin: 0;
+        width: 100%;
+        text-overflow: ellipsis;
+        position: relative;
+        z-index: 5;
+        white-space: nowrap;
+        overflow: hidden;
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px);
+        -webkit-transition: all 400ms ease-in-out;
+        transition: all 400ms ease-in-out;
+    }
+    .accordion ul li div a h2 {
+        font-family: Montserrat, sans-serif;
+        text-overflow: clip;
+        font-size: 32px;
+        text-transform: uppercase;
+        margin-bottom: 2px;
+        top: 160px;
+    }
+    #cajonpestana {
+        width: 100%;
+        background-color: #FFF;
+        color: #2e3192;
+        text-overflow: clip;
+        font-size: 32px;
+        text-transform: uppercase;
+        margin-bottom: 2px;
+        bottom: -215px;
+        text-align: center;
+    }
+    #cajonpestana h2 {
+        color: #2e3192;
+    }
+    .accordion ul li div a p {
+        top: 160px;
+        font-size: 18px;
+        padding-left: 1em;
+    }
+    .accordion ul li:nth-child(1) {
+        background-image: url("/imagenes/acordeon/acordeon_rosa_1.jpg");
+        background-position: 50% 30%;
+    }
+    .accordion ul li:nth-child(2) {
+        background-image: url("/imagenes/acordeon/acordeon_rosa_2.jpg");
+        background-position: 70% 0%;
+    }
+    .accordion ul li:nth-child(3) {
+        background-image: url("/imagenes/acordeon/acordeon_rosa_3.jpg");
+        background-position: 50% 50%;
+    }
+    .accordion ul li:nth-child(4) {
+        background-image: url("/imagenes/acordeon/acordeon_rosa_4.jpg");
+        background-position: 30% 40%;
+    }
+    .accordion ul li:nth-child(5) {
+        background-image: url("/imagenes/acordeon/acordeon_rosa_5.jpg");
+        background-position: 60% 64%;
+    }
+    .accordion ul li:nth-child(6) {
+        background-image: url("/imagenes/acordeon/acordeon_rosa_7.jpg");
+        background-position: 70% 25%;
+    }
+    .accordion ul li:nth-child(7) {
+        background-image: url("/imagenes/acordeon/acordeon_rosa_8.jpg");
+        background-position: 70% 25%;
+    }
+    .accordion ul li:nth-child(8) {
+        background-image: url("/imagenes/acordeon/acordeon_rosa_9.jpg");
+        background-position: 70% 25%;
+    }
+    .accordion ul li {
+        background-size: cover;
+    }
+    .accordion ul:hover li {
+        width: 10%;
+    }
+    .accordion ul:hover li:hover {
+        width: 90%;
+    }
+    /*.accordion ul:hover li:hover a { background: rgba(0, 0, 0, 0.4); }*/
+    .accordion ul:hover li:hover a * {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        .accordion {
+            height: auto;
+        }
+        .accordion ul li,
+        .accordion ul li:hover,
+        .accordion ul:hover li,
+        .accordion ul:hover li:hover {
+            position: relative;
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+            -webkit-transition: none;
+            transition: none;
+        }
+        .accordion ul li div a * {
+            opacity: 1;
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+    }
+}

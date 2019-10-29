@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'ingles\PageController@index')->name('index_En');
+Route::get('index', 'ingles\PageController@index')->name('index_En');
+Route::get('producto/{variedad?}', 'ingles\PageController@producto')->name('producto_En');
