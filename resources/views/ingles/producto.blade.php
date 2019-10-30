@@ -125,6 +125,7 @@
 @section('scriptsPagina')
 <script>
     function cambiarFloresGaleria(pk_rosa) {
+        var asset_global = '{{asset("/")}}';
         var espacioFotoPrincipal = "";
             var tablaDescripcion = "";
         $.ajax({
@@ -132,7 +133,38 @@
             url:'/prodSeleccionado/'+pk_rosa,
             success:function(data){
                 $.each(data,function(index,value){
-
+                    espacioFotoPrincipal = espacioFotoPrincipal + '<div class="tituloGaleriaFlores">';
+                    espacioFotoPrincipal = espacioFotoPrincipal + '<h2>' + value['nombre'] + '</h2>';
+                    espacioFotoPrincipal = espacioFotoPrincipal + '</div>';
+                    espacioFotoPrincipal = espacioFotoPrincipal + '<img src="'+asset_global + 'imagenes/sistema/' + value['foto'] + '" class="img-fluid">';
+                    tablaDescripcion = tablaDescripcion + '<tr>';
+                    tablaDescripcion = tablaDescripcion + '<th scope="row">COLOR DESCRIPTION</th>';
+                    tablaDescripcion = tablaDescripcion + '<td>' + myObj[x].descripcion_color + '</td>';
+                    tablaDescripcion = tablaDescripcion + '</tr>';
+                    tablaDescripcion = tablaDescripcion + '<tr>';
+                    tablaDescripcion = tablaDescripcion + '<th scope="row">STEM LENGTH (CMS)</th>';
+                    tablaDescripcion = tablaDescripcion + '<td>' + myObj[x].stem_length + '</td>';
+                    tablaDescripcion = tablaDescripcion + '</tr>';
+                    tablaDescripcion = tablaDescripcion + '<tr>';
+                    tablaDescripcion = tablaDescripcion + '<th scope="row">HEAD SIZE</th>';
+                    tablaDescripcion = tablaDescripcion + '<td>' + myObj[x].head_size + '</td>';
+                    tablaDescripcion = tablaDescripcion + '</tr>';
+                    tablaDescripcion = tablaDescripcion + '<tr>';
+                    tablaDescripcion = tablaDescripcion + '<th scope="row">VASE LIFE</th>';
+                    tablaDescripcion = tablaDescripcion + '<td>' + myObj[x].vase_life + '</td>';
+                    tablaDescripcion = tablaDescripcion + '</tr>';
+                    tablaDescripcion = tablaDescripcion + '<tr>';
+                    tablaDescripcion = tablaDescripcion + '<th scope="row">OPENING SPEED</th>';
+                    tablaDescripcion = tablaDescripcion + '<td>' + myObj[x].opening_speed + '</td>';
+                    tablaDescripcion = tablaDescripcion + '</tr>';
+                    tablaDescripcion = tablaDescripcion + '<tr>';
+                    tablaDescripcion = tablaDescripcion + '<th scope="row">BLOOM SIZE</th>';
+                    tablaDescripcion = tablaDescripcion + '<td>' + myObj[x].bloom_size + '</td>';
+                    tablaDescripcion = tablaDescripcion + '</tr>';
+                    tablaDescripcion = tablaDescripcion + '<tr>';
+                    tablaDescripcion = tablaDescripcion + '<th scope="row">AVAILABLE IN SOLID BOXES</th>';
+                    tablaDescripcion = tablaDescripcion + '<td>' + myObj[x].available_in_solid_boxes + '</td>';
+                    tablaDescripcion = tablaDescripcion + '</tr>';
                 });
             }
         });
