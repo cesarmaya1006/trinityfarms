@@ -100,4 +100,8 @@ class PageController extends Controller
     {
         //
     }
+    public function prodSeleccionado($id)
+    {
+        return Producto::find($id);
+    }
 }

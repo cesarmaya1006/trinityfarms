@@ -79,7 +79,7 @@
                 <ul>
                     <li>
                         <div>
-                            <a href="paginaFlores.php?clase=Freedom" class="sliderLink">
+                            <a href="{{route('producto_En','Freedom')}}" class="sliderLink">
                                 <h2>Freedom</h2>
                                 <p><br><br><br>
                                 </p>
@@ -88,7 +88,7 @@
                     </li>
                     <li>
                         <div>
-                            <a href="paginaFlores.php?clase=Oranges" class="sliderLink">
+                            <a href="{{route('producto_En','Oranges')}}" class="sliderLink">
                                 <h2>Oranges</h2>
                                 <p><br><br></p>
                             </a>
@@ -96,7 +96,7 @@
                     </li>
                     <li>
                         <div>
-                            <a href="paginaFlores.php?clase=Whites" class="sliderLink">
+                            <a href="{{route('producto_En','Whites')}}" class="sliderLink">
                                 <h2>Whites</h2>
                                 <p><br><br></p>
                             </a>
@@ -104,7 +104,7 @@
                     </li>
                     <li>
                         <div>
-                            <a href="paginaFlores.php?clase=Yellows" class="sliderLink">
+                            <a href="{{route('producto_En','Yellows')}}" class="sliderLink">
                                 <h2>Yellows</h2>
                                 <p><br><br></p>
                             </a>
@@ -112,7 +112,7 @@
                     </li>
                     <li>
                         <div>
-                            <a href="paginaFlores.php?clase=Pinks" class="sliderLink">
+                            <a href="{{route('producto_En','Pinks')}}" class="sliderLink">
                                 <h2>Pinks</h2>
                                 <p><br><br></p>
                             </a>
@@ -120,7 +120,7 @@
                     </li>
                     <li>
                         <div>
-                            <a href="paginaFlores.php?clase=Purples" class="sliderLink">
+                            <a href="{{route('producto_En','Purples')}}" class="sliderLink">
                                 <h2>Purples</h2>
                                 <p><br><br></p>
                             </a>
@@ -128,7 +128,7 @@
                     </li>
                     <li>
                         <div>
-                            <a href="paginaFlores.php?clase=Novelties" class="sliderLink">
+                            <a href="{{route('producto_En','Novelties')}}" class="sliderLink">
                                 <h2>Novelties</h2>
                                 <p><br><br></p>
                             </a>
@@ -136,7 +136,7 @@
                     </li>
                     <li>
                         <div>
-                            <a href="paginaFlores.php?clase=Bicolor" class="sliderLink">
+                            <a href="{{route('producto_En','Bicolor')}}" class="sliderLink">
                                 <h2>Bicolor</h2>
                                 <p><br><br></p>
                             </a>
@@ -166,6 +166,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    @yield('scriptsPagina')
 </body>
 
 </html>
